@@ -1,0 +1,119 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    
+    box-sizing: border-box;
+    background-color: black;
+}
+@media (max-width: 768px) {
+    .banner {
+        width: 100%;
+        height: 250px;
+        object-position: center;
+    }
+}
+
+.banner{
+    
+    width: 100%;
+    height: 475px;
+    object-fit: cover;
+    display: block;
+
+}
+.carousel {
+    position: relative;
+    width: 600px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 600px;
+    flex-shrink: 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.produto1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    color: white;
+}
+
+.texto {
+    width: 50%;
+}
+
+.imagem {
+    width: 50%;
+}
+
+.imagem img {
+    width: 100%;
+    border-radius: 10px;
+}
+.detalhe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    color: white;
+}
+
+.detalhe .imagem {
+    width: 50%;
+}
+
+.detalhe .imagem img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.detalhe .texto {
+    width: 50%;
+    padding: 20px;
+}
+
+.rodape {
+    background-color: goldenrod;
+    color: black;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+.rodape a {
+    text-decoration: none;
+    color: black;
+    margin-left:15px;
+}
+
+.redes a:hover {
+    text-decoration: underline;
+}
