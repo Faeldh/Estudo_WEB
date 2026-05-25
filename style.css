@@ -1,30 +1,27 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    
+/* 1. RESET BÁSICO - Aplica o box-sizing em todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
     background-color: black;
 }
 
-.banner{
-    
+/* 2. BANNER */
+.banner {
     width: 100%;
     height: 475px;
     object-fit: cover;
     display: block;
 }
-@media (max-width: 768px) {
-    .banner {
-        width: 100%;
-        height: 250px;
-        object-position: center;
-    }
 
-}
+/* 3. CARROSSEL */
 .carousel {
     position: relative;
-    max-width: 600px;
-    width: 100%;
+    max-width: 600px; /* Impede de crescer muito no PC */
+    width: 100%;      /* Permite encolher no celular */
     margin: 30px auto;
     overflow: hidden;
 }
@@ -35,7 +32,7 @@ body{
 }
 
 .slide {
-    width: 600px;
+    width: 100%; /* Cada slide ocupa 100% do tamanho do carrossel */
     flex-shrink: 0;
 }
 
@@ -50,14 +47,11 @@ body{
     cursor: pointer;
 }
 
-.prev {
-    left: 10px;
-}
+.prev { left: 10px; }
+.next { right: 10px; }
 
-.next {
-    right: 10px;
-}
-.produto1 {
+/* 4. SEÇÕES DE PRODUTOS E DETALHES (Estilo Padrão para Desktop) */
+.produto1, .detalhe {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,44 +59,20 @@ body{
     color: white;
 }
 
-.texto {
-    width: 50%;
-}
-
-.imagem {
-    width: 50%;
-}
-
-.imagem img {
-    width: 100%;
-    border-radius: 10px;
-}
-.detalhe {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    color: white;
-}
-
-.detalhe .imagem {
-    width: 50%;
-}
-
-.detalhe .imagem img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.detalhe .texto {
+.texto, .imagem {
     width: 50%;
     padding: 20px;
 }
 
+.imagem img, .detalhe .imagem img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 5. RODAPÉ */
 .rodape {
     background-color: goldenrod;
     color: black;
-    width: auto;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -112,9 +82,40 @@ body{
 .rodape a {
     text-decoration: none;
     color: black;
-    margin-left:15px;
+    margin-left: 15px;
 }
 
 .redes a:hover {
     text-decoration: underline;
+}
+
+/* --------------------------------------------------- */
+/* 6. MEDIA QUERIES (REGRAS PARA CELULAR)              */
+/* Sempre no final do arquivo CSS                      */
+/* --------------------------------------------------- */
+@media (max-width: 768px) {
+    /* Diminui a altura do banner no celular */
+    .banner {
+        height: 250px;
+    }
+
+    /* Empilha os produtos e detalhes verticalmente */
+    .produto1, .detalhe {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Faz os textos e imagens ocuparem toda a tela do celular */
+    .texto, .imagem {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Opcional: Empilha o rodapé para não ficar apertado */
+    .rodape {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
 }
