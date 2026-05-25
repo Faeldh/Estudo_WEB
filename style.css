@@ -88,6 +88,17 @@ body {
 .redes a:hover {
     text-decoration: underline;
 }
+/* Estilo para o link de localização no rodapé */
+.link-localizacao {
+    color: black; /* Mantém a cor preta do rodapé */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse ou tocar */
+.link-localizacao:hover {
+    text-decoration: underline; /* Adiciona o sublinhado para mostrar que é clicável */
+}
 
 /* --------------------------------------------------- */
 /* 6. MEDIA QUERIES (REGRAS PARA CELULAR)              */
