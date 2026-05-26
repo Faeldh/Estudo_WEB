@@ -82,7 +82,7 @@ body {
 .rodape a {
     text-decoration: none;
     color: black;
-    margin-left: 15px;
+    /*margin-left: 15px;/*
 }
 /*Icones de rede */
 .redes {
