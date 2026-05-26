@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #1a1814;
     font-family: Arial, sans-serif;
 }
 /*Barra de navegação*/
@@ -14,8 +14,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: #12100c;
     padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 
 }
 /* Rolagem suave ao clicar nos links */
