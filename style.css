@@ -4,7 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Rolagem suave ao clicar nos links */
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #1a1814;
     font-family: Arial, sans-serif;
@@ -19,30 +22,30 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 
 }
-/* Rolagem suave ao clicar nos links */
-html {
-    scroll-behavior: smooth;
-}
+
+
 /*Lista de links*/
 .vav-links{
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 
 }
 /*Estilo das palavras*/
 .nav-links a{
+    
     color: white;
     text-decoration: none;
     font-size: 16px;
-    transition: color 0.3s;
+    font-weight: 400;
+    transition: color 0.3s ease;
 
 }
 /*Muda a cor dos botões*/
-.vav-links a:hover{
-    color: #3498db;
+.nav-links a:hover{
+    color: #e48d3c;
 }
 /* --- ESTILOS DA PESQUISA --- */
 .search-box {
@@ -51,10 +54,15 @@ html {
 }
 
 .search-box input {
-    padding: 8px;
+    padding: 8px 20px;
+    width: 250px;
     border: none;
-    border-radius: 4px;
+    border-radius: 25px;
     outline: none;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: right;
 }
 
 .search-box button {
