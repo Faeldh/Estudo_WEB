@@ -84,6 +84,13 @@ body {
     color: black;
     margin-left: 15px;
 }
+/*Icones de rede */
+.redes {
+    display: flex;
+    justify-content: center; /* Garante que os ícones fiquem centralizados */
+    align-items: center;     /* Alinha a altura deles */
+    gap: 20px;               /* Cria um espaçamento perfeito entre os ícones */
+}
 
 .redes a:hover {
     text-decoration: underline;
