@@ -31,7 +31,12 @@ body {
     align-items: center;
     padding: 15px 30px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
 
+.logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 
 
@@ -59,6 +64,12 @@ body {
     color: #e48d3c;
 }
 /* ---CAMPO DE ESTILOS DA PESQUISA --- */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .search-box input {
     padding: 8px 20px;
     width: 250px;
@@ -93,10 +104,24 @@ body {
     color: #000;
 }
 
+.search-box button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 45px;
+    background-color: #e48d3c;
+    color: #111;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.search-box button:hover {
+    opacity: 0.85;
+}
+
 /* 3. CARROSSEL */
 .carousel {
     position: relative;
-    max-width: 600px; /* Impede de crescer muito no PC */
+    max-width: 100%;
     width: 100%;      /* Permite encolher no celular */
     margin: 30px auto;
     overflow: hidden;
@@ -190,28 +215,71 @@ body {
 /* Sempre no final do arquivo CSS                      */
 /* --------------------------------------------------- */
 @media (max-width: 768px) {
-    /* Diminui a altura do banner no celular */
-    .banner {
-        height: 250px;
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 15px 20px;
     }
 
-    /* Empilha os produtos e detalhes verticalmente */
-    .produto1, .detalhe {
+    .navbar .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links {
         flex-direction: column;
-        padding: 20px;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .nav-links li {
+        width: 100%;
         text-align: center;
     }
 
-    /* Faz os textos e imagens ocuparem toda a tela do celular */
+    .search-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .search-box button {
+        width: auto;
+    }
+
+    .carousel {
+        margin: 20px auto;
+    }
+
+    .produto1, .detalhe {
+        flex-direction: column;
+        padding: 20px 15px;
+        text-align: center;
+        gap: 20px;
+    }
+
     .texto, .imagem {
         width: 100%;
         padding: 10px 0;
     }
 
-    /* Opcional: Empilha o rodapé para não ficar apertado */
     .rodape {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+        padding: 20px 15px;
+    }
+
+    .rodape .info,
+    .rodape .redes {
+        width: 100%;
     }
 }
