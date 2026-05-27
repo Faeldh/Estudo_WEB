@@ -47,36 +47,32 @@ body {
 .nav-links a:hover{
     color: #e48d3c;
 }
-/* --- ESTILOS DA PESQUISA --- */
-.search-box {
-    display: flex;
-    gap: 5px;
-}
-
+/* ---CAMPO DE ESTILOS DA PESQUISA --- */
 .search-box input {
     padding: 8px 20px;
     width: 250px;
     border: none;
-    border-radius: 25px;
+    border-radius: 25px; /* Cria o formato de "pílula" arredondada */
     outline: none;
-
+    
+    font-family: 'Oswald', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
-    text-align: right;
+    
+    text-align: right; /* Alinha o texto do placeholder à direita, como na imagem */
 }
 
-.search-box button {
-    padding: 8px 15px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/* Estiliza especificamente o texto "FAÇA SUA BUSCA" */
+.search-box input::placeholder {
+    color: #e48d3c;
+    opacity: 1; /* Necessário para Firefox não deixar a cor desbotada */
 }
 
-.search-box button:hover {
-    background-color: #2980b9;
+/* Quando o usuário começar a digitar, o texto digitado ficará preto */
+.search-box input:focus {
+    color: #000;
 }
+
 /* Estiliza especificamente o texto "FAÇA SUA BUSCA" */
 .search-box input::placeholder{
     color: #e48d3c;
