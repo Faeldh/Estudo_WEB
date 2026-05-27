@@ -113,6 +113,57 @@ body {
 .search-box button:hover {
     opacity: 0.85;
 }
+.sela-capa{
+    width: 100%;
+    padding: 20px 20px 20px 0;
+    display: flex;
+    gap: 40px;
+    margin: 20px 0 40px;
+    align-items: center;
+}
+
+.sela-capa .imagem {
+    flex: 1 1 55%;
+    
+}
+
+.sela-capa .imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.sela-capa .texto-capa {
+    flex: 1 1 40%;
+    padding-right: 20px;
+}
+
+.sela-capa .texto-capa h1,
+.sela-capa .texto-capa h2,
+.sela-capa .texto-capa p {
+    margin: 0;
+    text-align: right;
+}
+
+.sela-capa .texto-capa h1 {
+    color: #EEA45E;
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.sela-capa .texto-capa h2 {
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.sela-capa .texto-capa p {
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 1.4;
+}
 
 .video {
     width: 100%;
@@ -123,8 +174,8 @@ body {
 }
 
 .video video {
-    width: 90%;
-    max-width: 800px;
+    width: 80%;
+    max-width: 600px;
     border-radius: 20px;
     overflow: hidden;
     display: block;
