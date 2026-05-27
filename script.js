@@ -1,6 +1,6 @@
 ﻿let index = 0;
 const slides = document.querySelector('.slides');
-const slideImages = document.querySelectorAll('.slide');
+const slideImages = document.querySelectorAll('.slide img');
 const carousel = document.querySelector('.carousel');
 
 function atualizarFundo() {
@@ -23,4 +23,7 @@ function mudarSlide(direcao) {
     atualizarFundo();
 }
 
-window.addEventListener('load', atualizarFundo);
+window.addEventListener('load', () => {
+    slides.style.transform = 'translateX(0)';
+    atualizarFundo();
+});

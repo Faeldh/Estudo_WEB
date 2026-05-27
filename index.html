@@ -33,25 +33,24 @@
             </div>
         </nav>
     </section>
-    <section class="fundo2">
-        
-        <video controls width="600">
-            <source src="vid/video.mp4" type="video/mp4"> Seu navegador não suporta a tag do video</video>
-
-
+    <section class="video">
+        <video autoplay muted loop>
+            <source src="vid/video.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
     </section>
+
     <!--<img src="img/teste.png" class="banner"> -->
 
 
     <div class="carousel">
         <div class="slides">
-            <img src="img/sela1.png" class="slide">
-            <img src="img/sela2.png" class="slide">
-            <img src="img/cabecada.png" class="slide">
+            <div class="slide"><img src="img/sela1.png" alt="Slide 1"></div>
+            <div class="slide"><img src="img/sela2.png" alt="Slide 2"></div>
+            <div class="slide"><img src="img/cabecada.png" alt="Slide 3"></div>
         </div>
-    <button class="prev" onclick="mudarSlide(-1)">❮</button>
-    <button class="next" onclick="mudarSlide(1)">❯</button>   
-     
+        <button class="prev" onclick="mudarSlide(-1)">❮</button>
+        <button class="next" onclick="mudarSlide(1)">❯</button>
     </div>
     
     <section class="produto1">
