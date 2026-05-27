@@ -140,6 +140,13 @@ body {
     overflow: hidden;
 }
 
+video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 
 .slides {
@@ -304,5 +311,44 @@ body {
     .rodape .info,
     .rodape .redes {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 12px;
+    }
+
+    .logo img {
+        height: 34px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .search-box {
+        gap: 8px;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+    }
+
+    .carousel {
+        margin: 16px 8px;
+    }
+
+    .produto1, .detalhe {
+        padding: 16px 12px;
+    }
+
+    .rodape {
+        padding: 16px 12px;
     }
 }
