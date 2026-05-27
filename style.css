@@ -13,26 +13,18 @@ body {
     font-family: Arial, sans-serif;
 }
 .fundo1{
-    background-image: url('img/FUNDO_1.png');
+    background-image: url('img/FUNDO_COMPLETO.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 100px 20px;
-    text-align: center;
+    
 }
-.fundo2{
-    background-image: url('img/FUNDO_2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 100px 20px;
-    text-align: center;
-}
+
 /*Barra de navegação*/
 .navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top center;
 
     padding: 15px 30px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
