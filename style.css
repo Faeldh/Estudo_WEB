@@ -52,7 +52,7 @@ body {
     padding: 8px 20px;
     width: 250px;
     border: none;
-    border-radius: 0px; /* Cria o formato de "pílula" arredondada */
+    border-radius: 45px; /* Cria o formato de "pílula" arredondada */
     outline: none;
     
     font-family: 'Oswald', sans-serif;
