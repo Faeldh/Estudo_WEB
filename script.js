@@ -1,8 +1,15 @@
-let index = 0;
+﻿let index = 0;
+const slides = document.querySelector('.slides');
+const slideImages = document.querySelectorAll('.slide');
+const carousel = document.querySelector('.carousel');
+
+function atualizarFundo() {
+    const currentSrc = slideImages[index].src;
+    carousel.style.setProperty('--carousel-bg', `url('${currentSrc}')`);
+}
 
 function mudarSlide(direcao) {
-    const slides = document.querySelector('.slides');
-    const total = document.querySelectorAll('.slide').length;
+    const total = slideImages.length;
 
     index += direcao;
 
@@ -13,4 +20,7 @@ function mudarSlide(direcao) {
     }
 
     slides.style.transform = `translateX(-${index * 100}%)`;
+    atualizarFundo();
 }
+
+window.addEventListener('load', atualizarFundo);

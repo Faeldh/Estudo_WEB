@@ -134,10 +134,33 @@ body {
 /* 3. CARROSSEL */
 .carousel {
     position: relative;
-    max-width: 100%;
-    width: 100%;      /* Permite encolher no celular */
+    width: min(90%, 740px);
     margin: 30px auto;
     overflow: hidden;
+    border-radius: 18px;
+    aspect-ratio: 16 / 9;
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.carousel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--carousel-bg, url('img/sela1.png'));
+    background-size: cover;
+    background-position: center;
+    filter: blur(25px);
+    opacity: 0.34;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.carousel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.32));
+    z-index: 2;
 }
 
 video {
@@ -150,13 +173,18 @@ video {
 
 
 .slides {
+    position: relative;
+    z-index: 3;
     display: flex;
     transition: transform 0.5s ease;
+    height: 100%;
 }
 
 .slide {
     width: 100%; /* Cada slide ocupa 100% do tamanho do carrossel */
     flex-shrink: 0;
+    height: 100%;
+    object-fit: cover;
 }
 
 .prev, .next {
