@@ -184,6 +184,8 @@ body {
     display: block;
     object-fit: cover;
 }
+
+/* --- CARROSSEL DE IMAGENS --- */
 .carrossel {
     position: relative;
     width: 100%;
@@ -258,6 +260,40 @@ body {
     max-width: 220px;
     height: auto;
     align-self: center;
+}
+
+.valores {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px;
+    ; /* fundo marrom */
+}
+
+.card {
+    
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card h3 {
+    background-color: #EEA45E;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 28px;
+    padding: 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.card p {
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 
@@ -691,5 +727,11 @@ body {
 
     .sela-capa .texto-capa p {
         font-size: 13px;
+    }
+}
+@media (max-width: 768px) {
+    .valores {
+        flex-direction: column;
+        align-items: center;
     }
 }
