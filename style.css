@@ -52,10 +52,10 @@ body {
 }
 /*Estilo das palavras*/
 .nav-links a{
-    
+    font-family: 'Oswald', sans-serif;
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     transition: color 0.3s ease;
 
@@ -185,6 +185,7 @@ body {
     object-fit: cover;
 }
 
+
 /* --- CARROSSEL DE IMAGENS --- */
 .carrossel {
     position: relative;
@@ -232,6 +233,7 @@ body {
 
 .somos .texto {
     flex: 1 1 auto;
+    
 }
 
 .somos .texto h2 {
@@ -239,6 +241,7 @@ body {
     color: #EEA45E;
     font-size: 36px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .somos .texto p {
@@ -246,6 +249,7 @@ body {
     color: #FFFFFF;
     font-size: 18px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .somos .logo{
@@ -267,7 +271,7 @@ body {
     justify-content: space-around;
     gap: 20px;
     padding: 40px;
-    ; /* fundo marrom */
+    
 }
 
 .card {
@@ -294,6 +298,7 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     line-height: 1.4;
+    
 }
 
 
@@ -343,10 +348,12 @@ body {
 
     .somos .texto h2 {
         font-size: 30px;
+        text-align: center;
     }
 
     .somos .texto p {
         font-size: 16px;
+        text-align: justify;
     }
 }
 
@@ -533,6 +540,7 @@ body {
     }
 
     .rodape {
+        
         flex-direction: column;
         gap: 15px;
         text-align: center;
@@ -612,7 +620,7 @@ body {
 
     .somos .texto p {
         font-size: 16px;
-        justify-content: center;
+        justify-content: justify;
     }
 }
 
@@ -713,12 +721,12 @@ body {
 
     .somos .texto h2 {
         font-size: 28px;
-        justify-content: center;
+        text-align: center;
     }
 
     .somos .texto p {
         font-size: 15px;
-        justify-content: center;
+        text-align: justify;
     }
 }
 
