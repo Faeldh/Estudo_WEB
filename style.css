@@ -265,11 +265,52 @@ body {
     .carousel .slide img {
         object-fit: contain;
     }
+
+    .somos {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .somos .logo {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .somos .logo img {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
     .carousel .slide img {
         object-fit: contain;
+    }
+
+    .somos {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 18px;
+        gap: 18px;
+    }
+
+    .somos .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .somos .logo img {
+        max-width: 220px;
+    }
+
+    .somos .texto h2 {
+        font-size: 30px;
+    }
+
+    .somos .texto p {
+        font-size: 16px;
     }
 }
 
