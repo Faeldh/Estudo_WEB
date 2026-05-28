@@ -8,6 +8,11 @@ function atualizarFundo() {
     carousel.style.setProperty('--carousel-bg', `url('${currentSrc}')`);
 }
 
+function atualizarPosicao() {
+    const carouselWidth = carousel.clientWidth;
+    slides.style.transform = `translateX(-${index * carouselWidth}px)`;
+}
+
 function mudarSlide(direcao) {
     const total = slideImages.length;
 
@@ -19,9 +24,13 @@ function mudarSlide(direcao) {
         index = 0;
     }
 
-    slides.style.transform = `translateX(-${index * 100}%)`;
+    atualizarPosicao();
     atualizarFundo();
 }
+
+window.addEventListener('resize', () => {
+    atualizarPosicao();
+});
 
 let slideInterval = null;
 
