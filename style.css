@@ -219,6 +219,47 @@ body {
     max-height: 600px;
     display: block;
 }
+.somos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    color: white;
+}
+
+.somos .texto {
+    flex: 1 1 auto;
+}
+
+.somos .texto h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #EEA45E;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.somos .texto p {
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.somos .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 300px;
+}
+
+.somos .logo img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    align-self: center;
+}
+
 
 @media (max-width: 768px) {
     .carousel .slide img {
