@@ -113,25 +113,38 @@ body {
 .search-box button:hover {
     opacity: 0.85;
 }
-.sela-capa{
+.sela-capa {
     width: 100%;
-    padding: 20px 20px 20px 0;
+    padding: 20px 40px 20px 20px;
     display: flex;
     gap: 40px;
     margin: 20px 0 40px;
     align-items: center;
-}
-.sela-capa, .texto-capa {
     justify-content: space-between;
 }
-.sela-capa .texto-capa h1, .sela-capa .texto-capa h2, .sela-capa .texto-capa p {
-    font-family: 'Oswald', sans-serif;
-    text-align: right;
+
+.sela-capa .imagem {
+    flex: 0 0 50%;
+    max-width: 500px;
 }
+
 .sela-capa .imagem img {
-    width: 85%;
+    width: 100%;
     height: auto;
     border-radius: 20px;
+}
+
+.sela-capa .texto-capa {
+    flex: 0 0 45%;
+    padding-right: 20px;
+}
+
+.sela-capa .texto-capa h1,
+.sela-capa .texto-capa h2,
+.sela-capa .texto-capa p {
+    font-family: 'Oswald', sans-serif;
+    text-align: right;
+    margin: 0;
 }
 .sela-capa .texto-capa h1 {
     color: #EEA45E;
@@ -287,6 +300,15 @@ body {
         margin: 20px 10px;
     }
 
+    .video {
+        padding: 15px 0;
+    }
+
+    .video video {
+        width: 95%;
+        max-width: 100%;
+    }
+
     .produto1, .detalhe {
         flex-direction: column;
         padding: 20px 15px;
@@ -314,12 +336,13 @@ body {
     .sela-capa {
         flex-direction: column;
         padding: 20px 0;
-        gap: 20px;
+        gap: 15px;
         align-items: stretch;
     }
 
     .sela-capa .imagem {
         flex: 1 1 auto;
+        max-width: 100%;
     }
 
     .sela-capa .texto-capa {
@@ -336,14 +359,16 @@ body {
 
     .sela-capa .texto-capa h1 {
         font-size: 32px;
+        margin-bottom: 12px;
     }
 
     .sela-capa .texto-capa h2 {
-        font-size: 28px;
+        font-size: 26px;
+        margin-bottom: 12px;
     }
 
     .sela-capa .texto-capa p {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -377,6 +402,15 @@ body {
         margin: 16px 8px;
     }
 
+    .video {
+        padding: 12px 0;
+    }
+
+    .video video {
+        width: 95%;
+        max-width: 100%;
+    }
+
     .produto1, .detalhe {
         padding: 16px 12px;
     }
@@ -386,44 +420,35 @@ body {
     }
 
     .sela-capa {
-        padding: 15px 10px;
-        gap: 15px;
+        padding: 15px 0;
+        gap: 12px;
     }
 
     .sela-capa .texto-capa h1 {
-        font-size: 28px;
-        margin-bottom: 8px;
+        font-size: 26px;
+        margin-bottom: 6px;
     }
 
     .sela-capa .texto-capa h2 {
-        font-size: 22px;
-        margin-bottom: 8px;
+        font-size: 20px;
+        margin-bottom: 6px;
     }
 
     .sela-capa .texto-capa p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
-@media(max-width: 400px) {
-    .sela-capa {
-        flex-direction: column;
-        padding: 20px 10px;
-        gap: 20px;
-    }
 
+@media (max-width: 400px) {
     .sela-capa .texto-capa h1 {
-        font-size: 28px;
-    }
-
-    .sela-capa .texto-capa h2 {
         font-size: 22px;
     }
 
-    .sela-capa .texto-capa p {
+    .sela-capa .texto-capa h2 {
         font-size: 18px;
     }
 
-    .sela-capa .imagem img {
-        width: 100%;
+    .sela-capa .texto-capa p {
+        font-size: 13px;
     }
 }
