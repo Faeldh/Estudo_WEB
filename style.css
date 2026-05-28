@@ -544,6 +544,37 @@ body {
     .sela-capa .texto-capa p {
         font-size: 16px;
     }
+
+    .somos {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 24px 16px;
+        gap: 20px;
+    }
+
+    .somos .texto,
+    .somos .logo {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .somos .logo {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .somos .logo img {
+        max-width: 220px;
+        width: auto;
+    }
+
+    .somos .texto h2 {
+        font-size: 32px;
+    }
+
+    .somos .texto p {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -614,6 +645,38 @@ body {
 
     .sela-capa .texto-capa p {
         font-size: 14px;
+    }
+
+    .somos {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 18px 12px;
+        gap: 18px;
+    }
+
+    .somos .texto,
+    .somos .logo {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .somos .logo {
+        justify-content: center;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .somos .logo img {
+        max-width: 200px;
+        width: auto;
+    }
+
+    .somos .texto h2 {
+        font-size: 28px;
+    }
+
+    .somos .texto p {
+        font-size: 15px;
     }
 }
 
