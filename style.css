@@ -210,21 +210,22 @@ body {
 .carousel .slide {
     min-width: 100%;
     flex-shrink: 0;
+    
 }
 
 .carousel .slide img {
     width: 100%;
-    height: auto;
+    height: 600px;
     display: block;
-}
 
+}
 .carousel button.prev,
 .carousel button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     border: none;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0);
     color: #fff;
     font-size: 32px;
     padding: 10px 15px;
@@ -256,13 +257,25 @@ body {
 }
 
 .texto, .imagem {
-    width: 50%;
+    width: 55%;
     padding: 20px;
 }
 
 .imagem img, .detalhe .imagem img {
-    width: 55%;
+    width: 100%;
     border-radius: 10px;
+}
+.produto1 .texto h2, .detalhe .texto h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #EEA45E;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.produto1 .texto p, .detalhe .texto p {
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 /* 5. RODAPÉ */
