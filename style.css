@@ -121,6 +121,9 @@ body {
     margin: 20px 0 40px;
     align-items: center;
 }
+.sela-capa, .texto-capa {
+    justify-content: space-between;
+}
 .sela-capa .texto-capa h1, .sela-capa .texto-capa h2, .sela-capa .texto-capa p {
     font-family: 'Oswald', sans-serif;
     text-align: right;
@@ -307,6 +310,41 @@ body {
     .rodape .redes {
         width: 100%;
     }
+
+    .sela-capa {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .sela-capa .imagem {
+        flex: 1 1 auto;
+    }
+
+    .sela-capa .texto-capa {
+        flex: 1 1 auto;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .sela-capa .texto-capa h1,
+    .sela-capa .texto-capa h2,
+    .sela-capa .texto-capa p {
+        text-align: center;
+    }
+
+    .sela-capa .texto-capa h1 {
+        font-size: 32px;
+    }
+
+    .sela-capa .texto-capa h2 {
+        font-size: 28px;
+    }
+
+    .sela-capa .texto-capa p {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -345,6 +383,25 @@ body {
 
     .rodape {
         padding: 16px 12px;
+    }
+
+    .sela-capa {
+        padding: 15px 10px;
+        gap: 15px;
+    }
+
+    .sela-capa .texto-capa h1 {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .sela-capa .texto-capa h2 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .sela-capa .texto-capa p {
+        font-size: 16px;
     }
 }
 @media(max-width: 400px) {
