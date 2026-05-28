@@ -215,10 +215,12 @@ body {
 
 .carousel .slide img {
     width: 100%;
-    height: 600px;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
     display: block;
-
 }
+
 .carousel button.prev,
 .carousel button.next {
     position: absolute;
@@ -375,6 +377,10 @@ body {
         margin: 20px 10px;
     }
 
+    .carousel .slide img {
+        max-height: 420px;
+    }
+
     .video {
         padding: 15px 0;
     }
@@ -475,6 +481,10 @@ body {
 
     .carousel {
         margin: 16px 8px;
+    }
+
+    .carousel .slide img {
+        max-height: 320px;
     }
 
     .video {
