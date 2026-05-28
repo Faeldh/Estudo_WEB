@@ -517,6 +517,7 @@ body {
     .video video {
         width: 95%;
         max-width: 100%;
+        border: 2px solid transparent;
     }
 
     .produto1, .detalhe {
@@ -606,10 +607,12 @@ body {
 
     .somos .texto h2 {
         font-size: 32px;
+        justify-content: center;
     }
 
     .somos .texto p {
         font-size: 16px;
+        justify-content: center;
     }
 }
 
