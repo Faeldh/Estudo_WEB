@@ -709,13 +709,16 @@ body {
         max-width: 200px;
         width: auto;
     }
+    
 
     .somos .texto h2 {
         font-size: 28px;
+        justify-content: center;
     }
 
     .somos .texto p {
         font-size: 15px;
+        justify-content: center;
     }
 }
 
