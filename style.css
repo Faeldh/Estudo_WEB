@@ -184,6 +184,68 @@ body {
     display: block;
     object-fit: cover;
 }
+.carrossel {
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    background-color: #111;
+}
+
+.carousel .slides {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.carousel .slide {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel button.prev,
+.carousel button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    font-size: 32px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+    z-index: 10;
+}
+
+.carousel button.prev:hover,
+.carousel button.next:hover {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.carousel button.prev {
+    left: 16px;
+}
+
+.carousel button.next {
+    right: 16px;
+}
 
 .produto1, .detalhe {
     display: flex;

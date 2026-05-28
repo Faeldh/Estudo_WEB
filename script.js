@@ -23,7 +23,21 @@ function mudarSlide(direcao) {
     atualizarFundo();
 }
 
+let slideInterval = null;
+
+function iniciarCarousel() {
+    slideInterval = setInterval(() => mudarSlide(1), 5000);
+}
+
+function pararCarousel() {
+    clearInterval(slideInterval);
+}
+
 window.addEventListener('load', () => {
     slides.style.transform = 'translateX(0)';
     atualizarFundo();
+    iniciarCarousel();
 });
+
+carousel.addEventListener('mouseenter', pararCarousel);
+carousel.addEventListener('mouseleave', iniciarCarousel);
