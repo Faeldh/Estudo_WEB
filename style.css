@@ -184,6 +184,22 @@ body {
     display: block;
     object-fit: cover;
 }
+.collapse summary {
+    font-family: 'Oswald', sans-serif;
+    color: #EEA45E;
+    font-size: 28px;
+    cursor: pointer;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+.collapse p {
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 20px 20px;
+}
 
 
 /* --- CARROSSEL DE IMAGENS --- */
