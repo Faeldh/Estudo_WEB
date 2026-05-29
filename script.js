@@ -9,8 +9,8 @@ function atualizarFundo() {
 }
 
 function atualizarPosicao() {
-    const carouselWidth = carousel.clientWidth;
-    slides.style.transform = `translateX(-${index * carouselWidth}px)`;
+    const slideWidth = slides.querySelector('.slide').clientWidth;
+    slides.style.transform = `translateX(-${index * slideWidth}px)`;
 }
 
 function mudarSlide(direcao) {
