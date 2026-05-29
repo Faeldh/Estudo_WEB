@@ -778,6 +778,21 @@ body {
         font-size: 15px;
         text-align: justify;
     }
+
+    .collapse {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .collapse summary {
+        font-size: 22px;
+        padding: 10px 14px;
+    }
+
+    .collapse p {
+        font-size: 16px;
+        padding: 0 14px 18px;
+    }
 }
 
 @media (max-width: 400px) {
