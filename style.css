@@ -615,12 +615,12 @@ body {
 
     .somos .texto h2 {
         font-size: 32px;
-        justify-content: center;
+        text-align: center;
     }
 
     .somos .texto p {
         font-size: 16px;
-        justify-content: justify;
+        text-align: justify;
     }
 }
 
